@@ -16,9 +16,9 @@ browser.get('https://www.linkedin.com/home')
 browser.maximize_window()
 time.sleep(3)
 input_username=browser.find_element(By.ID,'session_key')
-input_username.send_keys ("tranvannamntt@gmail.com")# enter username
+input_username.send_keys ("")# enter username
 input_pass= browser.find_element(By.ID,'session_password')
-input_pass.send_keys("123456789@@")# enter password
+input_pass.send_keys("")# enter password
 button= browser.find_element(By.XPATH,'//*[@id="main-content"]/section[1]/div/div/form[1]/div[2]/button').click()
 time.sleep(3)
 n=len(data_list)
