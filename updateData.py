@@ -47,11 +47,11 @@ def updateData():
             except:
                 job_type=""
             try:
-                location=browser.find_element(By.XPATH,'//*[@id="ember27"]/div[2]/div[2]/div[2]/span[1]').text
+                location=browser.find_element(By.XPATH,"//span[contains(@class, 'text-body-small') and contains(@class, 'inline') and contains(@class, 't-black--light') and contains(@class, 'break-words')]").text
             except:
                 location=""
             try:
-                company=browser.find_element(By.XPATH,'//*[@id="ember27"]/div[2]/div[2]/ul/li[1]/button/span/div')
+                company=browser.find_element(By.XPATH,"//div[contains(@class, 'inline-show-more-text') and contains(@class, 'inline-show-more-text--is-collapsed') and contains(@class, 'inline-show-more-text--is-collapsed-with-line-clamp')]")
                 company=company.get_attribute('textContent').replace('"', '').strip()
             except:
                 company=""
