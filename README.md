@@ -14,15 +14,15 @@ Adjust rows and columns containing linkedIn links that need updating
 
 below is the 5th Column, lines 2 to 68
 
-  df=pd.read_excel('info.xlsx') # Enter excel file name
+    df=pd.read_excel('info.xlsx') # Enter excel file name
 
-  data_list=df.iloc[1:68,5].values.tolist()
+    data_list=df.iloc[1:68,5].values.tolist()
 
 Step 3: Enter the userName and password of a linkedIn account
 
-  input_username.send_keys ("username")# enter username
+    input_username.send_keys ("username")# enter username
 
-  input_pass.send_keys("password")# enter password
+    input_pass.send_keys("password")# enter password
   
   Step 4: Enter the name of the excel file to export after successful update
   
